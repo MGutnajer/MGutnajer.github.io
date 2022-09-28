@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Global Data Breaches</title>
+  <meta name="description" content="Medical Data Breaches 2010-2021">
+  <meta name="author" content="Michael Gutnajer">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/bubble_chart.css">
+
+  <style>
+
+
+   #right_float_middle{
+       margin-top: 60px;
+       margin-left:15px;
+       /*float: right;*/
+       /*background: red;*/
+       overflow: hidden;
+       /*width: 20%;*/
+       display: inline-block;
+   }
+
+
+   #charts_container {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+   }
+
+
+  </style>
+
+</head>
+ 
+<!--  
+
+-->
+
+<body>
+
+  <div class="container">
+
+    <h1> Prominent Medical Breaches 2015 To 2021</h1>
+    <p> * Data Breaches that affected 10,000 or more Individuals</p>
+    <!-- <p><strong>"A data breach is an incident in which sensitive, protected or confidential data has potentially been viewed, stolen or used by an individual unauthorized to do so."</strong></p>  -->
+    <p><strong>The Who's, Whats, and Hows of Major Medical Data Breaches </strong></p>
+    <!-- searchsecurity.techtarget.com/definition/data-breach -->
+    <br>
+    <div id="toolbar">
+      <a href="#" id="all" class="button active">All Data Breaches</a>
+      <a href="#" id="year" class="button">Breaches by Year</a>
+      <a href="#" id="source" class="button">Breaches by Source</a>
+    </div>
+
+  </div> <!-- close the container div -->
+
+<div id="charts_container">
+
+    <div id="vis"></div>
+
+
+    <!-- <div id="right_float_middle"> <p> Random Text </p> </div> -->
+
+
+  <div id="right_float_middle">
+      
+
+      <svg width="1000" height="600">
+        <text x="1" y="15" font-weight="bold">Data Location</text>
+        <circle cx="20" cy="40" r="15" stroke="black" stroke-width="2" fill="#ff8585"  /> 
+        <text x="40" y="45" font-weight="bold">Network Server</text>
+        <circle cx="170" cy="40" r="15" stroke="black" stroke-width="2" fill="#3895d3"  /> 
+        <text x="190" y="45" font-weight="bold">Email</text>
+        <circle cx="250" cy="40" r="15" stroke="black" stroke-width="2" fill="#a1fa9d"  /> 
+        <text x="270" y="45" font-weight="bold">Physical Electronic</text>
+        <circle cx="420" cy="40" r="15" stroke="black" stroke-width="2" fill="#ffffab"  /> 
+        <text x="440" y="45" font-weight="bold">Paper/Films</text>
+        <circle cx="550" cy="40" r="15" stroke="black" stroke-width="2" fill="#eaaffa"  /> 
+        <text x="570" y="45" font-weight="bold">Other</text>
+
+        <text x="1" y="130" font-weight="bold">Trends and Patterns</text> 
+        <text x="20" y="150">1. Through the years 2015-2016, there was a slight downward trend in the number of data records that were breached by any means. </text>
+        <text x="20" y="170">2. The vast majority of data breach incidents occurred through the hacking of network servers. </text>
+        <text x="20" y="190">3. Overtime there has been a more pronounced reduction in breaches from other data locations then network servers and email.</text>
+        <text x="20" y="210">4. There has been a steady increase in data breaches from 2018 onward.</text> 
+      </svg>
+  </div>
+
+
+
+<br style="clear:both;"/>
+
+</div> <!-- Close the Charts Container Div -->
+
+</div>
+
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="./js/tooltip.js"></script>
+  <script src="./js/bubble_chart.js"></script>
+  
+
+
+
+
+</body>
+</html>
